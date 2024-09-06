@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  max-width: 600px;
+  max-width: 50%;
   margin: 0 auto;
 }
 
@@ -7,22 +13,29 @@ body {
   background: pink;
   border: 3px solid blue;
   /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
   /* CHANGE ME */
-  margin-bottom: 0px;
+  margin-bottom: 48px;
+}
+
+.container{
+    /* divides container in half */
+    width: 50%;
+    margin-left: auto;
 }
 
 .three {
   background: peachpuff;
   border: 3px solid brown;
-  width: 200px;
   /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  width: 200px;
+  padding: 32px;
+  /* browser auto calcs margin left amount based on space remaining on the right margin */
+  margin-left: auto;
 }
