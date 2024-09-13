@@ -1,25 +1,69 @@
-.header  {
-  font-family: monospace;
-  background: papayawhip;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  font-size: 48px;
-  font-weight: 900;
-  color: tomato;
-  background: white;
-  padding: 4px 32px;
+body {
+    padding: 10px;
 }
 
-ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
-}
+.container {
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-a {
-  font-size: 22px;
-  background: white;
-  padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
-}
+  .col {
+    padding: 10px;
+    word-break: break-word;
+    text-align: center;
+  }  
+  
+  .col1 {
+    flex-shrink: 1;
+    background: orange;
+    min-width: 0;
+  }
+  
+  .logo {
+    min-width: 0;
+
+    flex-shrink: 1;
+    background: yellow;
+    font-size: 48px;
+    font-weight: 900;
+    color: tomato;
+    padding: 4px 32px;
+  }
+  
+  .col3 {
+    flex-shrink: 1;
+    background: skyblue
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin: 5px 0;
+    flex-shrink: 1;
+    min-width: fit-content;
+    list-style: none;
+  }
+
+  li a {
+    background-color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: white;
+    padding: 8px;
+  }
